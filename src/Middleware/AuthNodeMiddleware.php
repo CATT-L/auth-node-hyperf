@@ -16,8 +16,11 @@ class AuthNodeMiddleware implements MiddlewareInterface {
 
     public function process (ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface {
 
-        /** @var Dispatched $dispatched */
         $dispatched = $request->getAttribute(Dispatched::class);
+
+        if (is_null($dispatched->handler)) {
+            return $handler->handle($request);
+        }
 
         $container = ApplicationContext::getContainer();
 

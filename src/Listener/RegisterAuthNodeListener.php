@@ -9,7 +9,6 @@ use Catt\AuthNode\Contract\AuthNodeInterface;
 use Catt\AuthNode\Object\CurrentNode;
 use Hyperf\Contract\StdoutLoggerInterface;
 use Hyperf\Di\Annotation\AnnotationCollector;
-use Hyperf\Event\Annotation\Listener;
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Framework\Event\BootApplication;
 use Hyperf\Utils\ApplicationContext;

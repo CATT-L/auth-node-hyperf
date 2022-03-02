@@ -14,9 +14,6 @@ use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Framework\Event\BootApplication;
 use Hyperf\Utils\ApplicationContext;
 
-/**
- * @Listener()
- */
 class RegisterAuthNodeListener implements ListenerInterface {
 
     public function listen (): array {

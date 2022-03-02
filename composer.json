@@ -4,9 +4,11 @@
     "license": "Apache-2.0",
     "keywords": [
         "php",
-        "hyperf"
+        "hyperf",
+        "auth",
+        "node"
     ],
-    "description": "",
+    "description": "An auth node annotation tool for hyperf.",
     "autoload": {
         "psr-4": {
             "Catt\\AuthNode\\": "src/"
